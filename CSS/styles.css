@@ -1,0 +1,149 @@
+html {
+  background-color: black;
+}
+
+body {
+  margin: 0px
+}
+
+@keyframes topMove {
+  0% {left: -1000px;}
+  100% {left: 0px;}
+}
+
+.top {
+  background-color: black;
+  color: white;    
+  padding: 5em;
+  position: relative;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  animation-name: topMove;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .top {
+    /*background-color: black;
+    color: white;
+    padding: 5em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;*/
+    padding: 2em;
+    font-size: 0.8em;
+  }
+}
+
+@keyframes testTwo {
+  0%  {left: -1500px;}
+  100% {left: 0px;}
+}
+
+.aboutMe {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 3em;
+  font-size: 1.5em;
+  text-align: center;
+  position: relative;
+  animation-name: testTwo;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutMe {
+    font-size: 1em;
+    padding: 2em;
+  }
+}
+
+/*
+p {
+  max-width: 70%;
+  margin: auto;
+}
+*/
+
+.aboutMeBorder {
+  width: 50%;
+  height: 1px;
+  margin: auto;
+  margin-top: 20px;
+  background: white;
+}
+
+.links {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+@keyframes stuff {
+  0% {left: 1000px;}
+  100% {left: 0px;}
+}
+
+.leftSide {
+  color: white;
+  padding: 2em;
+  font-size: 1.5em;
+  position: relative;
+  /*padding-bottom: 3em;*/
+  text-align: center;
+  animation-name: stuff;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .leftSide {
+    padding: 1em;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+@keyframes linky {
+  0%  {left: -1000px;}
+  100% {left: 0px;}
+}
+
+span {
+  position: relative;
+  padding: 1.5em;
+  /*text-align: center;*/
+  font-size: 1.5em;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  animation-name: linky;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  span {
+    padding: 1em;
+    font-size: 1em;
+
+
+  }
+}
+
+.itemWrapper {
+  text-align: center;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:link {
+  color: lightblue;
+  text-decoration: none;
+}
