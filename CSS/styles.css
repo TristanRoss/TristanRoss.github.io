@@ -31,7 +31,7 @@ body {
     padding: 5em;
     text-align: center;
     font-family: 'Montserrat', sans-serif;*/
-    padding: 2em;
+    padding: 1em;
     font-size: 0.8em;
   }
 }
@@ -56,8 +56,9 @@ body {
 @media only screen and (max-width: 600px) {
   .aboutMe {
     font-size: 1em;
-    padding: 2em;
+    padding: 0em 2em 2em 2em;
   }
+
 }
 
 /*
@@ -66,6 +67,95 @@ p {
   margin: auto;
 }
 */
+
+@keyframes LineOne {
+  0% {left: 0px;}
+  20% {left: -400px; top: 0px;}
+  30% {top: -80px;}
+  40% {top: 0px; left: -400px;}
+  60% {left: 0px;}
+  80% {left: 400px}
+  100% {left: 0px;}
+}
+
+@keyframes opacTime {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.delayDiv {
+  animation-name: opacTime;
+  animation-duration: 2s;
+}
+
+.animationLineOne {
+  width: 20%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 30px;
+  background: blue;
+  position: relative;
+  animation-name: LineOne;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 2.2s;
+}
+
+.animationLineTwo {
+  width: 20%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-radius: 30px;
+  background: red;
+  position: relative;
+  animation-name: LineOne;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 6.2s;
+}
+
+.animationLineThree {
+  width: 20%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-radius: 30px;
+  background: #42f47d;
+  position: relative;
+  animation-name: LineOne;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 4.2s;
+}
+
+.animationLineFour {
+  width: 20%;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-radius: 30px;
+  background: #fcf93c;
+  position: relative;
+  animation-name: LineOne;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 8.2s;
+}
 
 .aboutMeBorder {
   width: 50%;
