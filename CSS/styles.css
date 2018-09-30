@@ -239,9 +239,9 @@ ul li {
   width: 50px;
   position: absolute;
   background: linear-gradient(red, blue);
-  animation: spin 32s linear infinite;
+  animation: spin 40s linear infinite;
   border-radius: 0px;
-  animation-delay: 4s;
+  animation-delay: 8s;
   left: -7%;
   top: 35%;
   opacity: 0.5;
@@ -259,9 +259,9 @@ ul li {
   width: 50px;
   position: absolute;
   background: linear-gradient(#fcf93c, #42f47d);
-  animation: spinTwo 32s linear infinite;
+  animation: spinTwo 40s linear infinite;
   border-radius: 0px;
-  animation-delay: 2s;
+  animation-delay: 6s;
   left: -10%;
   top: 45%;
   opacity: 0.6;
