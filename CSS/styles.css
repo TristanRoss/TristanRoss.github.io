@@ -7,8 +7,8 @@ body {
 }
 
 @keyframes topMove {
-  0% {left: -1000px;}
-  100% {left: 0px;}
+  0% {left: -100%;}
+  100% {left: 0%;}
 }
 
 .top {
@@ -20,7 +20,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   animation-name: topMove;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
   animation-timing-function: ease-in-out;
 }
 
@@ -28,12 +28,13 @@ body {
   .top {
     padding: 1em;
     font-size: 0.8em;
+    animation-duration: 1.5s;
   }
 }
 
-@keyframes testTwo {
-  0%  {left: -1500px;}
-  100% {left: 0px;}
+@keyframes paragraphRoll {
+  0%  {left: -100%;}
+  100% {left: 0%;}
 }
 
 .aboutMe {
@@ -43,8 +44,8 @@ body {
   font-size: 1.5em;
   text-align: center;
   position: relative;
-  animation-name: testTwo;
-  animation-duration: 2s;
+  animation-name: paragraphRoll;
+  animation-duration: 3.5s;
   animation-timing-function: ease-in-out;
 }
 
@@ -52,6 +53,7 @@ body {
   .aboutMe {
     font-size: 1em;
     padding: 0em 2em 2em 2em;
+    animation-duration: 1.6s;
   }
 }
 
@@ -82,10 +84,12 @@ p {
   100% {opacity: 1;}
 }
 
+
 .delayDiv {
   animation-name: opacTime;
-  animation-duration: 2.2s;
+  animation-duration: 4.2s;
 }
+
 
 .animationLineOne {
   width: 50px;
@@ -101,7 +105,7 @@ p {
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 2.4s;
+  animation-delay: 4.4s;
 }
 
 .animationLineTwo {
@@ -118,7 +122,7 @@ p {
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 4.4s;
+  animation-delay: 6.4s;
 }
 
 .animationLineThree {
@@ -135,7 +139,7 @@ p {
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 3.4s;
+  animation-delay: 5.4s;
 }
 
 .animationLineFour {
@@ -152,8 +156,31 @@ p {
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 5.4s;
+  animation-delay: 7.4s;
 }
+
+@media only screen and (max-width: 600px) {
+  .delayDiv {
+    animation-duration: 2.4s; 
+  }
+
+  .animationLineOne {
+    animation-delay: 2.4s;
+  }
+
+  .animationLineTwo {
+    animation-delay: 4.4s;
+  }
+
+  .animationLineThree {
+    animation-delay: 3.4s;
+  }
+
+  .animationLineFour {
+    animation-delay: 5.4s;
+  }
+}
+
 
 .aboutMeBorder {
   width: 50%;
@@ -169,8 +196,8 @@ p {
 }
 
 @keyframes rollIn {
-  0% {left: 1000px;}
-  100% {left: 0px;}
+  0% {left: -100%;}
+  100% {left: 0%;}
 }
 
 .leftSide {
@@ -178,10 +205,9 @@ p {
   padding: 1em 2em 0.5em 2em;
   font-size: 2em;
   position: relative;
-  /*padding-bottom: 3em;*/
   text-align: center;
   animation-name: rollIn;
-  animation-duration: 1.8s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
 }
 
@@ -189,17 +215,14 @@ p {
   .leftSide {
     padding: 1em;
     font-size: 1.5em;
+    animation-duration: 1.8s;
   }
+
 }
 
 @keyframes linkRoll {
-  0%  {left: -1000px;}
-  100% {left: 0px;}
-}
-
-@keyframes secondLinkRoll {
-  0% {left: -1200px;}
-  100% {left: -200px;}
+  0%  {left: -125%;}
+  100% {left: 0%;}
 }
 
 ul {
@@ -213,7 +236,7 @@ ul li {
   margin-right: 50px;
   position: relative;
   animation-name: linkRoll;
-  animation-duration: 2s;
+  animation-duration: 4.4s;
   animation-timing-function: ease-in-out;
   border: 1px;
   border-style: solid;
@@ -222,9 +245,17 @@ ul li {
 }
 
 @media only screen and (max-width: 600px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   ul li {
-    padding: 1em 1em 1em 1em;
+    margin-bottom: 1em;
+    padding: 1em;
     font-size: 1.2em;
+    animation-duration: 2s;
   }
 }
 
