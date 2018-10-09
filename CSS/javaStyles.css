@@ -1,0 +1,116 @@
+html {
+	background-color: black;
+}
+
+body {
+	margin: 0px;
+}
+
+@keyframes headerRoll {
+	0% {left: -100%;}
+	100% {left: 0%;}
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	animation-name: headerRoll;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	position: relative;
+	background-image: -webkit-linear-gradient(left, white, orange);
+  background-image:    -moz-linear-gradient(left, white, orange);
+  background-image:     -ms-linear-gradient(left, white, orange);
+  background-image:      -o-linear-gradient(left, white, orange);
+  background-image:         linear-gradient(to right, white, orange);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes linkRolling {
+	0% {top: 50px;}
+	100% {top: 0px;}
+}
+
+@keyframes opacLink {
+	0% {opacity: 0}
+	50% {opacity: 0}
+	100% {opacity: 1;}
+}
+
+.linkBottom {
+	margin-top: 3em;
+	text-align: center;
+	animation-name: opacLink;
+	animation-duration: 3s;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0;
+}
+
+ul li {
+	position: relative;
+	animation-name: linkRolling;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	margin-right: 30px;
+	animation-delay: 0.5s;
+}
+
+a {
+  color: #f442e2;
+	font-family: 'Montserrat', sans-serif;
+	padding: 1em;
+	font-size: 1.2em;
+	border: 2px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 20px;
+	text-decoration: none;
+
+}
+
+a:visited {
+	color: #f442e2;
+}
+
+a:hover {
+	color: #42e8f4;
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 1.5em;
+	}
+
+	a {
+		font-size: 1em;
+	}
+
+	ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	}
+
+	ul li {
+		margin: 1em;
+		margin-left: 0em;
+		padding: 1em;
+	}
+}
+
+video {
+	width: 70%;
+	height: 70%;
+	display: block;
+	margin: 0 auto;
+
+}
