@@ -68,10 +68,10 @@ a {
 	font-family: 'Montserrat', sans-serif;
 	padding: 1em;
 	font-size: 1.2em;
-	border: 2px;
+	border: 1px;
 	border-style: solid;
 	border-color: white;
-	border-radius: 20px;
+	border-radius: 10px;
 	text-decoration: none;
 
 }
@@ -89,9 +89,6 @@ a:hover {
 		font-size: 1.5em;
 	}
 
-	a {
-		font-size: 1em;
-	}
 
   ul {
     list-style-type: none;
@@ -102,7 +99,7 @@ a:hover {
   }
 
 	ul li {
-		margin-bottom: 1.5em;
+		margin-bottom: 2em;
 		margin-left: 0em;
 		margin-right: 0px;
 		padding: 1em;
