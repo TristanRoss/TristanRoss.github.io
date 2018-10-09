@@ -247,18 +247,28 @@ ul li {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    list-style-type: none;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
   }
+
+@keyframes tinyRoll {
+  0% {left: -225%;}
+  100% {left: 0%;}
+}
 
   ul li {
     margin-bottom: 1em;
     padding: 1em;
     font-size: 1.2em;
     animation-duration: 2s;
+    animation-name: tinyRoll;
+    animation-timing-function: ease-in-out;
+    margin-right: 0px;
   }
 }
 
