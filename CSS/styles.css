@@ -14,7 +14,8 @@ body {
 .top {
   background-color: black;
   color: white;    
-  padding: 3em;
+  padding: 2em;
+  padding-top: 1em;
   position: relative;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -228,6 +229,8 @@ p {
 ul {
   display: flex;
   justify-content: center;
+  list-style: none;
+  padding-left: 0;
 }
 
 ul li {
