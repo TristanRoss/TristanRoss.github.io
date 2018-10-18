@@ -7,8 +7,20 @@ body {
 }
 
 @keyframes topMove {
-  0% {left: -100%;}
-  100% {left: 0%;}
+  0% {top: 20%;}
+  100% {top: 0%;}
+}
+
+@keyframes opacTop {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.topWrapper {
+  text-align: center;
+  animation-name: opacTop;
+  animation-duration: 0.9s;
 }
 
 .top {
@@ -21,21 +33,32 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   animation-name: topMove;
-  animation-duration: 3s;
+  animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
 }
 
 @media only screen and (max-width: 600px) {
   .top {
     padding: 1em;
-    font-size: 0.8em;
-    animation-duration: 1.5s;
+    font-size: 0.7em;
   }
 }
 
-@keyframes paragraphRoll {
-  0%  {left: -100%;}
-  100% {left: 0%;}
+@keyframes paragraphMove {
+  0%  {top: 4%;}
+  100% {top: 0%;}
+}
+
+@keyframes opacPara {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.totalAbout {
+  text-align: center;
+  animation-name: opacPara;
+  animation-duration: 1.8s;
 }
 
 .aboutMe {
@@ -45,8 +68,9 @@ body {
   font-size: 1.5em;
   text-align: center;
   position: relative;
-  animation-name: paragraphRoll;
-  animation-duration: 3.5s;
+  animation-name: paragraphMove;
+  animation-duration: 1.2s;
+  animation-delay: 0.5s;
   animation-timing-function: ease-in-out;
 }
 
@@ -54,7 +78,6 @@ body {
   .aboutMe {
     font-size: 1em;
     padding: 0em 2em 2em 2em;
-    animation-duration: 1.6s;
   }
 }
 
@@ -88,7 +111,7 @@ p {
 
 .delayDiv {
   animation-name: opacTime;
-  animation-duration: 4.2s;
+  animation-duration: 2.9s;
 }
 
 
@@ -106,7 +129,7 @@ p {
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 4.4s;
+  animation-delay: 3s;
 }
 
 .animationLineTwo {
@@ -123,7 +146,7 @@ p {
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 6.4s;
+  animation-delay: 6s;
 }
 
 .animationLineThree {
@@ -140,7 +163,7 @@ p {
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 5.4s;
+  animation-delay: 5s;
 }
 
 .animationLineFour {
@@ -157,29 +180,7 @@ p {
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-delay: 7.4s;
-}
-
-@media only screen and (max-width: 600px) {
-  .delayDiv {
-    animation-duration: 2.4s; 
-  }
-
-  .animationLineOne {
-    animation-delay: 2.4s;
-  }
-
-  .animationLineTwo {
-    animation-delay: 4.4s;
-  }
-
-  .animationLineThree {
-    animation-delay: 3.4s;
-  }
-
-  .animationLineFour {
-    animation-delay: 5.4s;
-  }
+  animation-delay: 7s;
 }
 
 
@@ -197,8 +198,20 @@ p {
 }
 
 @keyframes rollIn {
-  0% {left: -100%;}
+  0% {left: -10%;}
   100% {left: 0%;}
+}
+
+@keyframes opacProj {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.projAndSoc {
+  text-align: center;
+  animation-name: opacProj;
+  animation-duration: 2.2s;
 }
 
 .leftSide {
@@ -208,7 +221,7 @@ p {
   position: relative;
   text-align: center;
   animation-name: rollIn;
-  animation-duration: 4s;
+  animation-duration: 2.2s;
   animation-timing-function: ease-in-out;
 }
 
@@ -216,14 +229,19 @@ p {
   .leftSide {
     padding: 1em;
     font-size: 1.5em;
-    animation-duration: 1.8s;
   }
 
 }
 
 @keyframes linkRoll {
-  0%  {left: -125%;}
+  0%  {left: -25%;}
   100% {left: 0%;}
+}
+
+@keyframes opacList {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 ul {
@@ -231,6 +249,8 @@ ul {
   justify-content: center;
   list-style: none;
   padding-left: 0;
+  animation-name: opacList;
+  animation-duration: 2.6s;
 }
 
 ul li {
@@ -239,7 +259,7 @@ ul li {
   margin-right: 50px;
   position: relative;
   animation-name: linkRoll;
-  animation-duration: 4.4s;
+  animation-duration: 2.6s;
   animation-timing-function: ease-in-out;
   border: 1px;
   border-style: solid;
@@ -256,18 +276,10 @@ ul li {
     text-align: center;
   }
 
-@keyframes tinyRoll {
-  0% {left: -225%;}
-  100% {left: 0%;}
-}
-
   ul li {
     margin-bottom: 1em;
     padding: 1em;
     font-size: 1.2em;
-    animation-duration: 2s;
-    animation-name: tinyRoll;
-    animation-timing-function: ease-in-out;
     margin-right: 0px;
   }
 }
