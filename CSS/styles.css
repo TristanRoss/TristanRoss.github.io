@@ -352,6 +352,18 @@ ul li {
   }
 }
 
+#odin:visited {
+  color: aqua;
+}
+
+#odin:link {
+  color: aqua;
+}
+
+#odin:hover {
+  color: blue;
+}
+
 .pro {
   color: #f442e2;
 }
