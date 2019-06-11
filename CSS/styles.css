@@ -352,15 +352,15 @@ ul li {
   }
 }
 
-#odin:visited {
+.odin:visited {
   color: aqua;
 }
 
-#odin:link {
+.odin:link {
   color: aqua;
 }
 
-#odin:hover {
+.odin:hover {
   color: blue;
 }
 
